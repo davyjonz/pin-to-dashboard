@@ -1,0 +1,9 @@
+<div class="row mt-4">
+    <div class="col-md-4" *ngFor="let dashPage of dashPages; let i = index">
+        <div class="card" (click)="OnRemove(dashPage)">
+            <div class="card-body">
+                {{dashPage.PageName}}
+            </div>
+        </div>
+    </div>
+</div>
